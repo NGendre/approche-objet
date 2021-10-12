@@ -44,14 +44,31 @@ public class Maison {
 		return superficie;
 	}
 	
-//	public double superficieType(String nomPiece) {
-//		for(Piece p : maison) {
-//			if (p.getClass().getSimpleName()) {
-//				
-//			}
-//			
-//		}
-//	}
+	
+	public double superficieType(String nomPiece) {
+		double superficie = 0;
+		for(Piece p : maison) {
+			if (p.getClass().getSimpleName()==nomPiece) {
+				superficie = superficie+p.getSuperficie();
+			}
+			
+		}
+		return superficie;
+	}
+	
+	
+	public int nbPieces(String nomPiece) {
+		int nbPieces = 0;
+		for(Piece p : maison) {
+			if (p.getClass().getSimpleName()==nomPiece) {
+				nbPieces++;
+			}
+			
+		}
+		return nbPieces;
+	}
+	
+	
 	
 	
 }
