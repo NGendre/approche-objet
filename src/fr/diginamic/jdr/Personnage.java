@@ -2,7 +2,7 @@ package fr.diginamic.jdr;
 
 import java.util.Random;
 
-public class Personnage {
+public class Personnage extends Protagoniste{
 	private int force;
 	private int pointsDeVie;
 	private int score;
@@ -17,6 +17,24 @@ public class Personnage {
 		this.pointsDeVie = pointsDeVie;
 		this.score = 0;
 	}
+	
+	
+	public int getPointsDeVie() {
+		return pointsDeVie;
+	}
+	public void setPointsDeVie(int pointsDeVie) {
+		this.pointsDeVie = pointsDeVie;
+	}
+	public int getForce() {
+		return force;
+	}
+	public int getScore() {
+		return score;
+	}
+	public void setScore() {
+		this.score = this.score++;
+	}
+
 
 
 	@Override
