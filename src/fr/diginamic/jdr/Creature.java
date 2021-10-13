@@ -1,6 +1,5 @@
 package fr.diginamic.jdr;
 
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class Creature extends Protagoniste{

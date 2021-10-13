@@ -7,7 +7,7 @@ public class TestJdr {
 
 	public static void main(String[] args) {
 		Personnage p = new Personnage();
-		Creature c = Creature.creerCreature();
+		Creature c = new Creature();
 		System.out.println(c);
 
 	}
