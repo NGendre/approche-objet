@@ -23,8 +23,8 @@ public class TestSetString {
 				nomLePlusLong = p;
 			}			
 		}
-		System.out.println(nomLePlusLong);
 		pays.remove(nomLePlusLong);
+		System.out.println(pays);
 
 	}
 

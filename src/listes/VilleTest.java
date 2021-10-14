@@ -1,6 +1,7 @@
 package listes;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class VilleTest {
 
@@ -38,6 +39,14 @@ public class VilleTest {
 			}
 		}
 		System.out.println(villes);
+		
+		Collections.sort(villes, new ComparatorHabitant());
+		System.out.println(villes);
+		
+		Collections.sort(villes, new ComparatorNom());
+		System.out.println(villes);
+		
+		
 
 	}
 
